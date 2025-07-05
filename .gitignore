@@ -1,0 +1,31 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Editor settings
+.vscode/
+.idea/
+
+# Test output and logs
+flask.log
+*.log
+*.coverage
+.coverage.*
+
+# Pytest cache
+.pytest_cache/
+
+# Mac-specific files
+.DS_Store
+
+# Bash history or temp files
+*.sh~
+
+
+.idea
