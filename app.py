@@ -1,3 +1,9 @@
+import os
+import sys
+
+# Ensure the current directory is in the module search path for CI environments
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+
 from flask import Flask, jsonify, request
 
 app = Flask(__name__)

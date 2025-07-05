@@ -28,6 +28,7 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
+          export PYTHONPATH=.
           pip install --upgrade pip
           pip install -r requirements.txt
 
@@ -35,6 +36,7 @@ jobs:
         working-directory: .
         run: |
           source venv/bin/activate
+          export PYTHONPATH=.
           nohup python app.py > flask.log 2>&1 &
           sleep 5
 
@@ -42,6 +44,7 @@ jobs:
         working-directory: .
         run: |
           source venv/bin/activate
+          export PYTHONPATH=.
           pytest tests
 
       - name: Run curl script (optional)
